@@ -3,7 +3,8 @@ name: app
 services:
   db:
     container_name: app_db
-    image: postgres
+    # Pinned: postgres 18+ rejects the /var/lib/postgresql/data mount below.
+    image: postgres:17-alpine
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres

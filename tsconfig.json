@@ -10,8 +10,12 @@
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
-    "baseUrl": "./",
     "outDir": "./dist",
+    "types": [
+      "bun",
+      "node",
+      "pg"
+    ],
     "paths": {
       "@/*": [
         "./src/*"

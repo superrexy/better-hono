@@ -1,0 +1,4 @@
+[test]
+# Creates the test database, applies migrations and seeds roles/permissions
+# once, before any test file runs.
+preload = ["./tests/setup.ts"]
